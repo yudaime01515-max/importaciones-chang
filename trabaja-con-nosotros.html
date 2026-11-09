@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trabaja con nosotros | Chang Corporation – Pucallpa</title>
+<meta name="description" content="Únete al equipo de Chang Corporation S.A.C. Vacantes en ventas, campo Claro e internet hogar en Pucallpa.">
+<meta name="theme-color" content="#07110c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Trabaja con nosotros | Chang Corporation – Pucallpa">
+<meta property="og:description" content="Únete al equipo de Chang Corporation S.A.C. Vacantes en ventas, campo Claro e internet hogar en Pucallpa.">
+<meta property="og:image" content="img/og-image.jpg">
+<link rel="icon" type="image/png" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="trabaja">
+<div class="loader"><img src="img/icono-a.png" alt=""></div>
+<div id="site-header"></div>
+<main>
+<section class="phero "><div class="slide-bg"></div><div class="wrap">
+  <div class="reveal-s ph-txt">
+    <div class="crumbs"><a href="index.html">Inicio</a><span data-ic="right"></span><span>Trabaja con nosotros</span></div>
+    <h1>Trabaja con <span>nosotros</span></h1><p class="lead">Sé parte de un gran equipo y construye tu futuro con nosotros.</p><p>En Chang Corporation S.A.C. creemos en el talento, el esfuerzo y la actitud. Si te apasionan las ventas, la tecnología y el servicio al cliente, ¡este es tu lugar!</p>
+    <div class="s-feats"><div><span data-ic="users"></span><span>Un gran<br>ambiente laboral</span></div><div><span data-ic="chart"></span><span>Oportunidades<br>de crecimiento</span></div><div><span data-ic="star"></span><span>Capacitación<br>constante</span></div><div><span data-ic="shield"></span><span>Estabilidad<br>y beneficios</span></div></div>
+  </div>
+  <div class="phero-art"><div class="team-card float"><span data-ic="users"></span><b>Tu talento<br>también<br>nos impulsa</b></div></div>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="why">
+    <div class="rv"><h2 style="font-size:2rem">¿Por qué trabajar con nosotros?</h2><p style="color:var(--mut);margin:12px 0 20px">En Chang Corporation valoramos a cada miembro de nuestro equipo y ofrecemos más que un empleo: brindamos oportunidades reales de crecimiento.</p><a class="btn btn-ol" href="nosotros.html">Conoce más sobre nuestra empresa <span data-ic="arrow"></span></a></div>
+    <div class="why-grid">
+      <div class="wg rv"><span data-ic="card"></span><b>Sueldo básico + comisiones</b><small>Tu esfuerzo se refleja en tus resultados.</small></div>
+      <div class="wg rv d1"><span data-ic="cap"></span><b>Capacitación permanente</b><small>Desarrolla tus habilidades y crece profesionalmente.</small></div>
+      <div class="wg rv d2"><span data-ic="target"></span><b>Bonos por metas</b><small>Reconocemos tu compromiso.</small></div>
+      <div class="wg rv"><span data-ic="clock"></span><b>Horarios definidos</b><small>Organiza tu tiempo con claridad.</small></div>
+      <div class="wg rv d1"><span data-ic="users"></span><b>Buen ambiente laboral</b><small>Trabaja en un equipo comprometido y unido.</small></div>
+      <div class="wg rv d2"><span data-ic="chart"></span><b>Oportunidad de ascenso</b><small>Tu crecimiento también es el nuestro.</small></div>
+    </div>
+  </div>
+</div></section>
+<section class="sec sec-gray"><div class="wrap">
+  <div class="sec-hd rv"><h2>Vacantes disponibles</h2><span style="color:var(--g3);font-weight:700">¡Tu próxima oportunidad está aquí!</span></div>
+  <div class="icards" data-vacantes></div>
+</div></section>
+<section class="sec" id="postula"><div class="wrap"><div class="apply">
+  <div class="apply-l rv"><img src="img/icono-a-blanco.png" alt=""><h3>Envíanos tu CV</h3><p>Completa el formulario y adjunta tu CV. Nos pondremos en contacto contigo.</p></div>
+  <form class="form rv d1" name="postulaciones" method="POST" action="gracias.html" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+    <input type="hidden" name="form-name" value="postulaciones"><p class="sr"><label>No llenar: <input name="bot-field"></label></p>
+    <h3>Postula aquí</h3><p>Los campos con <b style="color:var(--red)">*</b> son obligatorios.</p>
+    <div class="fld"><label>Nombre completo <i>*</i></label><input name="nombre" required placeholder="Ej. Juan Pérez García"></div>
+    <div class="f-row"><div class="fld"><label>Edad <i>*</i></label><input name="edad" type="number" min="18" max="70" required placeholder="Ej. 25"></div><div class="fld"><label>Teléfono / WhatsApp <i>*</i></label><input name="telefono" type="tel" required placeholder="Ej. 987 654 321"></div></div>
+    <div class="fld"><label>Correo electrónico <i>*</i></label><input name="correo" type="email" required placeholder="ejemplo@gmail.com"></div>
+    <div class="fld"><label>Puesto de interés <i>*</i></label><select name="puesto" id="puesto" required></select></div>
+    <div class="fld"><label class="file"><span data-ic="upload"></span><span><b>Adjunta tu CV</b><small>PDF, DOC o DOCX (máx. 5 MB)</small></span><input type="file" name="cv" accept=".pdf,.doc,.docx"></label></div>
+    <button class="btn btn-g btn-block" type="submit"><span data-ic="send"></span>Enviar postulación</button>
+  </form>
+  <div class="apply-r rv d2">
+    <div class="form"><span class="i-ic sm" data-ic="mail"></span><h3 style="font-size:1.15rem;margin-top:10px">También puedes enviarnos tu CV</h3><p style="color:var(--mut);font-size:.9rem;margin:6px 0 14px">Si no encuentras una vacante de tu interés, envíanos tu CV y lo tendremos en cuenta para futuras oportunidades.</p>
+    <a class="meta-l" href="mailto:changcorporationsac@gmail.com"><span data-ic="mail"></span><span data-cfg="correo"></span></a><a class="meta-l" data-wa="Hola, quiero postular a Chang Corporation."><span data-ic="wa"></span><span data-cfg="telefonoVisible"></span></a></div>
+    <div class="form" style="background:var(--gl);border-color:transparent;margin-top:16px"><b style="color:var(--g3)">¡Nos interesa conocerte!</b><p style="font-size:.88rem;margin-top:4px">En Chang Corporation tus ganas de crecer son nuestra mejor carta de presentación.</p></div>
+  </div>
+</div></div></section>
+</main>
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

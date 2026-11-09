@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contacto | Chang Corporation – Pucallpa</title>
+<meta name="description" content="Contáctanos por WhatsApp, teléfono o correo. Visítanos en nuestra tienda en Pucallpa – Ucayali.">
+<meta name="theme-color" content="#07110c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contacto | Chang Corporation – Pucallpa">
+<meta property="og:description" content="Contáctanos por WhatsApp, teléfono o correo. Visítanos en nuestra tienda en Pucallpa – Ucayali.">
+<meta property="og:image" content="img/og-image.jpg">
+<link rel="icon" type="image/png" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contacto">
+<div class="loader"><img src="img/icono-a.png" alt=""></div>
+<div id="site-header"></div>
+<main>
+<section class="phero "><div class="slide-bg"></div><div class="wrap">
+  <div class="reveal-s ph-txt">
+    <div class="crumbs"><a href="index.html">Inicio</a><span data-ic="right"></span><span>Contacto</span></div>
+    <h1>Contác<span>tanos</span></h1><p class="lead">Estamos para ayudarte</p><p>Te brindamos asesoría personalizada en celulares, accesorios, hogar, planes de Claro y Bitel y servicio técnico. Escríbenos, llámanos o visítanos en tienda.</p>
+    <div class="s-feats"><div><span data-ic="wa"></span><span>Atención rápida<br>y personalizada</span></div><div><span data-ic="headset"></span><span>Asesoría en<br>productos y planes</span></div><div><span data-ic="store"></span><span>Visítanos<br>en nuestra tienda</span></div><div><span data-ic="shield"></span><span>Soporte postventa<br>y servicio técnico</span></div></div>
+  </div>
+  <div class="phero-art"><div class="contact-bubbles"><div class="cb float"><span data-ic="wa"></span>¡Hola! ¿En qué te ayudamos?</div><div class="cb me float2">Quiero información de un celular 📱</div><div class="cb float3"><span data-ic="wa"></span>¡Claro! Te enviamos opciones 😊</div></div></div>
+</div></section>
+<div class="wrap"><div class="ccards">
+  <div class="cc rv"><div class="cc-top"><span class="cc-ic wa" data-ic="wa"></span><span><small>WhatsApp</small><b data-cfg="telefonoVisible"></b></span></div><a class="btn btn-g btn-sm btn-block" data-wa="">Escríbenos ahora <span data-ic="arrow"></span></a></div>
+  <div class="cc rv d1"><div class="cc-top"><span class="cc-ic" data-ic="call"></span><span><small>Llamadas</small><b data-cfg="telefonoVisible"></b></span></div><a class="btn btn-g btn-sm btn-block" href="tel:+51994378096">Llámanos <span data-ic="arrow"></span></a></div>
+  <div class="cc rv d2"><div class="cc-top"><span class="cc-ic" data-ic="mail"></span><span><small>Correo electrónico</small><b class="sm" data-cfg="correo"></b></span></div><a class="btn btn-g btn-sm btn-block" href="mailto:changcorporationsac@gmail.com">Enviar correo <span data-ic="arrow"></span></a></div>
+  <div class="cc rv d3"><div class="cc-top"><span class="cc-ic" data-ic="pin"></span><span><small>Nuestra dirección</small><b class="sm"><span data-cfg="direccion"></span><br><span data-cfg="ciudad"></span></b></span></div><a class="btn btn-g btn-sm btn-block" data-maplink>Cómo llegar <span data-ic="arrow"></span></a></div>
+</div></div>
+<section class="sec"><div class="wrap"><div class="split" id="mapa">
+  <div class="rv"><h2 style="font-size:1.5rem;margin-bottom:14px">Ubicación de nuestra tienda</h2><div class="map"><iframe data-map title="Mapa Chang Corporation" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><a class="btn btn-sm" data-maplink>Cómo llegar en Google Maps <span data-ic="arrow"></span></a></div></div>
+  <form class="form rv d1" name="contacto" method="POST" action="gracias.html" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contacto"><p class="sr"><label>No llenar: <input name="bot-field"></label></p>
+    <h3>Envíanos un mensaje</h3><p>Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+    <div class="fld"><label>Nombre completo <i>*</i></label><input name="nombre" required placeholder="Ingresa tu nombre"></div>
+    <div class="f-row"><div class="fld"><label>Teléfono / WhatsApp <i>*</i></label><input name="telefono" type="tel" required placeholder="Ej. 994 378 096"></div><div class="fld"><label>Correo electrónico</label><input name="correo" type="email" placeholder="Ej. tucorreo@gmail.com"></div></div>
+    <div class="fld"><label>Asunto <i>*</i></label><select name="asunto" required><option value="">Selecciona un tema</option><option>Celulares</option><option>Accesorios</option><option>Hogar y electrodomésticos</option><option>Planes Claro</option><option>Planes Bitel</option><option>Servicio técnico</option><option>Crédito PayJoy</option><option>Otro</option></select></div>
+    <div class="fld"><label>Mensaje <i>*</i></label><textarea name="mensaje" required placeholder="Cuéntanos en qué podemos ayudarte…"></textarea></div>
+    <button class="btn btn-g btn-block" type="submit"><span data-ic="send"></span>Enviar mensaje</button>
+  </form>
+</div></div></section>
+<section class="sec-sm"><div class="wrap"><div class="trio">
+  <div class="form rv"><h3 style="display:flex;gap:10px;align-items:center"><span data-ic="clock" style="color:var(--g)"></span>Horario de atención</h3><ul class="hours" data-hours></ul><p style="margin-top:14px;background:var(--gl);padding:12px 14px;border-radius:12px;font-size:.88rem;color:var(--g3)">También puedes escribirnos fuera del horario por WhatsApp.</p></div>
+  <div class="form rv d1"><h3 style="display:flex;gap:10px;align-items:center"><span data-ic="users" style="color:var(--g)"></span>Nuestras redes sociales</h3><p style="color:var(--mut);font-size:.9rem;margin:6px 0 16px">Síguenos y entérate de nuestras promociones, novedades y lanzamientos.</p><div class="social-big" data-social></div></div>
+  <div class="form rv d2 visit"><h3 style="display:flex;gap:10px;align-items:center"><span data-ic="store" style="color:var(--g)"></span>Visítanos en tienda</h3><div class="visit-art"><img src="img/logo-blanco.png" alt="Chang Corporation"></div><p style="font-weight:700;display:flex;gap:8px;align-items:center"><span data-ic="pin" style="color:var(--g)"></span><span data-cfg="ciudad"></span></p><p style="color:var(--mut);font-size:.88rem">Atención personalizada y la mejor experiencia en tecnología y hogar.</p></div>
+</div></div></section>
+<section class="sec-sm" id="faq"><div class="wrap">
+  <div class="sec-hd rv"><h2><span data-ic="help"></span>Preguntas frecuentes</h2></div>
+  <div class="faq faq-grid">
+    <details class="rv"><summary>¿Realizan envíos a domicilio?<span data-ic="down"></span></summary><div class="ans">Sí, realizamos envíos rápidos en Pucallpa y coordinamos envíos a otras zonas de Ucayali. Escríbenos por WhatsApp para coordinar el costo y el tiempo de entrega.</div></details>
+    <details class="rv"><summary>¿Puedo reservar un producto?<span data-ic="down"></span></summary><div class="ans">Sí. Escríbenos por WhatsApp con el producto que te interesa y te indicamos cómo separarlo.</div></details>
+    <details class="rv"><summary>¿Qué formas de pago aceptan?<span data-ic="down"></span></summary><div class="ans">Aceptamos efectivo y tarjetas. Para celulares también ofrecemos crédito PayJoy con pagos semanales (sujeto a evaluación).</div></details>
+    <details class="rv"><summary>¿Brindan garantía en sus productos?<span data-ic="down"></span></summary><div class="ans">Sí. Todos nuestros productos son originales y cuentan con la garantía del fabricante. Las reparaciones de servicio técnico también incluyen garantía.</div></details>
+    <details class="rv"><summary>¿Cómo funcionan los cambios y devoluciones?<span data-ic="down"></span></summary><div class="ans">Si tu producto presenta una falla de fábrica, acércate a la tienda con tu comprobante de compra y el producto en su empaque. Evaluamos el caso y gestionamos el cambio o la garantía.</div></details>
+    <details class="rv"><summary>¿Cómo consulto el estado de mi pedido?<span data-ic="down"></span></summary><div class="ans">Escríbenos por WhatsApp al <span data-cfg="telefonoVisible"></span> con tu nombre y el detalle de tu pedido y te informamos al instante.</div></details>
+  </div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

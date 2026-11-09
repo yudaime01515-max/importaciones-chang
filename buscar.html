@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Buscar productos | Chang Corporation</title>
+<meta name="description" content="Busca celulares, accesorios y productos para el hogar en Chang Corporation.">
+<meta name="theme-color" content="#07110c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Buscar productos | Chang Corporation">
+<meta property="og:description" content="Busca celulares, accesorios y productos para el hogar en Chang Corporation.">
+<meta property="og:image" content="img/og-image.jpg">
+<link rel="icon" type="image/png" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="buscar">
+<div class="loader"><img src="img/icono-a.png" alt=""></div>
+<div id="site-header"></div>
+<main>
+<section class="sec-sm" style="background:var(--dk);color:#fff"><div class="wrap"><div class="crumbs"><a href="index.html">Inicio</a><span data-ic="right"></span><span>Buscar</span></div><h1 style="font-size:2.2rem" data-qtitle>Todos los productos</h1></div></section><section class="sec-sm"><div class="wrap"><div class="catalog" data-catalog data-cat="buscar">
+  <aside class="side">
+    
+    <div class="side-box"><h4>Marcas</h4><div data-f="marcas"></div></div>
+    <div class="side-box"><h4>Rango de precio</h4><div class="range"><input name="min" type="number" min="0" placeholder="S/ mín"><span>—</span><input name="max" type="number" min="0" placeholder="S/ máx"></div></div>
+    <div class="side-box"><h4>Categoría</h4><div data-f="tipos"></div></div>
+    <button class="btn btn-g btn-block filters-close" data-close>Ver resultados</button>
+  </aside>
+  <div>
+    
+    <div class="toolbar"><button class="pill filters-btn" data-openfilters><span data-ic="filter"></span> Filtros</button><button class="pill on" data-sort="dest">Destacados</button><button class="pill " data-sort="top">Más vendidos</button><button class="pill " data-sort="new">Nuevos lanzamientos</button><button class="pill " data-sort="low">Menor precio</button><button class="pill " data-sort="high">Mayor precio</button><span class="count" data-count></span></div>
+    <div class="pgrid" data-grid></div>
+  </div>
+</div></div></section>
+</main>
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

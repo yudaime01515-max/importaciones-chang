@@ -1,0 +1,29 @@
+CHANG CORPORATION S.A.C. — WEB
+==============================
+
+CÓMO PUBLICAR EN NETLIFY
+1. Entra a app.netlify.com > tu sitio (importacioneschang) > "Deploys".
+2. Arrastra ESTA CARPETA completa (la que contiene index.html) al recuadro
+   "Drag and drop your site output folder here".
+3. Listo. Los formularios de Contacto y Trabaja con nosotros funcionan solos en
+   Netlify: los mensajes y CVs llegan a "Forms" en el panel de Netlify
+   (ahí puedes activar que te avisen al correo).
+
+CÓMO CAMBIAR PRECIOS, PRODUCTOS Y DATOS
+Abre js/data.js con el Bloc de notas o VS Code:
+- CONFIG: WhatsApp, correo, dirección, horario y links de redes sociales.
+  (Si pegas el link de Facebook/Instagram/TikTok, el ícono aparece solo.)
+- PRODUCTOS: nombre, precio ("price"), precio anterior ("old"; 0 = sin oferta),
+  etiqueta ("badge": Nuevo, Oferta, Más vendido...).
+- PLANES: planes de Claro y Bitel (son REFERENCIALES, confírmalos).
+- SERVICIOS y VACANTES.
+
+CÓMO PONER FOTOS REALES DE PRODUCTOS
+1. Copia la foto (ideal: fondo blanco o transparente, PNG/JPG cuadrada)
+   a la carpeta img/productos/
+2. En js/data.js, en ese producto escribe:  img: "img/productos/nombre-foto.png"
+Si "img" está vacío, la web muestra una ilustración automática.
+
+PÁGINAS
+index.html (Inicio) · celulares · accesorios · hogar · promociones · claro · bitel
+servicio-tecnico · nosotros · trabaja-con-nosotros · contacto · buscar · gracias
