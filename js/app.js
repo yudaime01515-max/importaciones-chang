@@ -433,8 +433,17 @@
       if (e.target.closest("[data-openfilters]")) { $(".side", root).classList.add("on"); $("#dBg").classList.add("on"); }
       if (e.target.closest("[data-mbrand]")) { const m = e.target.closest("[data-mbrand]").dataset.mbrand; st.marcas = new Set(m === "all" ? [] : [m]); $$("[data-f=marcas] input", root).forEach(i => i.checked = st.marcas.has(i.value)); $$("[data-mbrand]", root).forEach(x => x.classList.toggle("on", x.dataset.mbrand === m)); apply(); }
     });
+    // líneas / subcategorías que están FUERA del listado (franja de íconos de arriba)
+    document.addEventListener("click", e => {
+      const sb = e.target.closest("[data-sub]");
+      if (!sb || root.contains(sb)) return;
+      e.preventDefault();
+      $$("[data-sub]").forEach(x => x.classList.toggle("on", x.dataset.sub === sb.dataset.sub));
+      st.sub = sb.dataset.sub; apply();
+      const g = $("[data-grid]", root); if (g) g.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
     // brand clicks outside root (e.g. "compra por marca" strip)
-    $$("[data-brandpick]").forEach(b => b.addEventListener("click", () => { const m = b.dataset.brandpick; st.marcas = new Set([m]); $$("[data-f=marcas] input", root).forEach(i => i.checked = i.value === m); apply(); root.scrollIntoView({ behavior: "smooth" }); }));
+    $$("[data-brandpick]").forEach(b => b.addEventListener("click", () => { const m = b.dataset.brandpick; st.q = ""; st.marcas = new Set([m]); $$("[data-f=marcas] input", root).forEach(i => i.checked = i.value === m); apply(); root.scrollIntoView({ behavior: "smooth" }); }));
     const ttl = $("[data-qtitle]"); if (ttl) ttl.textContent = onlyFav ? "Mis favoritos" : q ? `Resultados para “${params.get("q")}”` : "Todos los productos";
     apply();
   }
