@@ -205,7 +205,7 @@
   }
   window.art = art;
 
-  const prodMedia = p => p.img ? `<img src="${p.img}" alt="${p.nombre}" loading="lazy">` : art(p.tipo, p.color);
+  const prodMedia = p => p.img ? `<img src="${p.img}" alt="${p.nombre}" loading="lazy" style="mix-blend-mode:multiply">` : art(p.tipo, p.color);
 
   /* ---------------- HEADER ---------------- */
   const NAV = [
