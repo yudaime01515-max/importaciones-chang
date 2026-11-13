@@ -525,7 +525,7 @@
         <a class="btn ${red ? "btn-red" : "btn-y"} btn-block btn-sm" target="_blank" rel="noopener" href="${wa(`Hola, me interesa el ${p.nombre} de ${red ? "Claro" : "Bitel"} (${p.gb}).`)}">Lo quiero</a></div>`).join("");
     });
     $$("[data-services]").forEach(el => {
-      el.innerHTML = SERVICIOS.map(s => `<article class="svc rv">${s.tag ? `<span class="badge">${s.tag}</span>` : ""}<div class="svc-art">${ic(s.icon)}</div><div class="svc-b"><h3>${s.nombre}</h3><ul>${s.items.map(i => `<li>${ic("checkc")}${i}</li>`).join("")}</ul><div class="from">Desde<b>S/ ${s.desde}</b></div>
+      el.innerHTML = SERVICIOS.map(s => `<article class="svc rv">${s.tag ? `<span class="badge">${s.tag}</span>` : ""}<div class="svc-art">${s.img ? `<img src="${s.img}" alt="${s.nombre}" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">` : ic(s.icon)}</div><div class="svc-b"><h3>${s.nombre}</h3><ul>${s.items.map(i => `<li>${ic("checkc")}${i}</li>`).join("")}</ul><div class="from">Desde<b>S/ ${s.desde}</b></div>
         <a class="btn btn-g btn-sm btn-block" style="margin-top:12px" target="_blank" rel="noopener" href="${wa(`Hola, quiero consultar por: ${s.nombre}. Mi equipo es: `)}">Consultar ${ic("arrow")}</a></div></article>`).join("");
     });
     $$("[data-vacantes]").forEach(el => {

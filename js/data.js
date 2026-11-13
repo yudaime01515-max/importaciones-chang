@@ -130,10 +130,10 @@ const PLANES = {
 };
 
 const SERVICIOS = [
-  { nombre: "Cambio de pantalla", desde: 150, icon: "phone", tag: "Más solicitado", items: ["Pantallas originales o calidad premium", "Instalación profesional", "Garantía incluida"] },
-  { nombre: "Cambio de batería", desde: 80, icon: "battery", items: ["Baterías de larga duración", "Compatibles y originales", "Instalación segura"] },
-  { nombre: "Reparación de puerto de carga", desde: 70, icon: "plug", items: ["Soluciona problemas de carga", "Repuestos de calidad", "Prueba y garantía"] },
-  { nombre: "Reparación de placa", desde: 120, icon: "cpu", items: ["Solución a fallas complejas", "Técnicos especializados", "Diagnóstico gratuito"] }
+  { nombre: "Cambio de pantalla", desde: 150, icon: "phone", img: "img/productos/rep-pantalla.webp", tag: "Más solicitado", items: ["Pantallas originales o calidad premium", "Instalación profesional", "Garantía incluida"] },
+  { nombre: "Cambio de batería", desde: 80, icon: "battery", img: "img/productos/rep-bateria.webp", items: ["Baterías de larga duración", "Compatibles y originales", "Instalación segura"] },
+  { nombre: "Reparación de puerto de carga", desde: 70, icon: "plug", img: "img/productos/rep-carga.webp", items: ["Soluciona problemas de carga", "Repuestos de calidad", "Prueba y garantía"] },
+  { nombre: "Reparación de placa", desde: 120, icon: "cpu", img: "img/productos/rep-placa.webp", items: ["Solución a fallas complejas", "Técnicos especializados", "Diagnóstico gratuito"] }
 ];
 
 const VACANTES = [
