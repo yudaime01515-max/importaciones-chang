@@ -119,13 +119,13 @@ const PLANES = {
     { nombre: "Plan Max 69", gb: "60 GB", precio: 69 },
     { nombre: "Plan Max 89", gb: "100 GB", precio: 89 },
     { nombre: "Plan Max 109", gb: "150 GB", precio: 109, top: true },
-    { nombre: "Plan Max 129", gb: "GB ILIMITADOS", precio: 129 }
+    { nombre: "Plan Max 129", gb: "Ilimitado", precio: 129 }
   ],
   bitel: [
     { nombre: "Plan Ilimitado 39", gb: "40 GB", precio: 39 },
     { nombre: "Plan Ilimitado 49", gb: "70 GB", precio: 49 },
     { nombre: "Plan Ilimitado 69", gb: "100 GB", precio: 69, top: true },
-    { nombre: "Plan Ilimitado 89", gb: "GB ILIMITADOS", precio: 89 }
+    { nombre: "Plan Ilimitado 89", gb: "Ilimitado", precio: 89 }
   ]
 };
 
